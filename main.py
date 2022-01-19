@@ -1,9 +1,11 @@
 import telebot
 import telebot, wikipedia, re
 
+import config
+
 # Создаем экземпляр бота
 
-bot = telebot.TeleBot("5092973637:AAFkWwAc8PNSc_s8B5iEED3othSNBZvPoQs")
+bot = telebot.TeleBot(config.TOKEN)
 
 wikipedia.set_lang("ru")
 
